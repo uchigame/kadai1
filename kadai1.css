@@ -6,12 +6,14 @@
 
 header {
   height: 50px;
+  width: auto;
   background-color: #ff9a4b;
 }
 
 main {
-  width: 960px;
+  width: auto;
   margin: 50px auto;
+  justify-content: center;
   display: flex;
 }
 
@@ -62,5 +64,55 @@ main {
 
 footer {
   height: 50px;
+
   background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.step-box {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
+
+.step-img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
 }
